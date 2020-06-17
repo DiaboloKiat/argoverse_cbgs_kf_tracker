@@ -35,9 +35,9 @@ rospy.init_node('visualization_argo', anonymous=True)
 #detection result path (The directory until you see lots of log folders)
 # folder_path = '/home/samliu/code/argoverse_cbgs_kf_tracker/temp_files/val-split-track-preds-maxage15-minhits5-conf0.3/'
 # tracking result path (The directory until you see lots of log folders)
-folder_path = '/home/samliu/code/argoverse_cbgs_kf_tracker/temp_files/val-split-track-preds-maxage15-minhits5-conf0.3/'
+folder_path = '/home/arg/argoverse_cbgs_kf_tracker/temp_files/tracker_output/'
 #lidar_data path (The directory until you see lots of log folders)
-lidar_path = '/home/samliu/code/argoverse-api/tracking_val_v1.1/argoverse-tracking/val/'
+lidar_path = '/media/arg/arg2TB-Ray/argoverse/test/'
 result_dirs = [d for d in os.listdir(folder_path) if os.path.isdir(os.path.join(folder_path, d))]
 
 # Register signal callback
